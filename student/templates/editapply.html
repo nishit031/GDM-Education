@@ -1,0 +1,1197 @@
+{% comment %}
+<form method="post" class="form-horizontal" action="/editadmin/{{data.id}}/" center>
+  {%csrf_token%} {% endcomment %}
+
+
+  {% load static %}
+
+
+  <!DOCTYPE html>
+
+  <html class="supernova">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- <link rel="alternate" type="application/json+oembed" href="https://www.jotform.com/oembed/?format=json&amp;url=https%3A%2F%2Fform.jotform.com%2F210682418757462" title="oEmbed Form">
+<link rel="alternate" type="text/xml+oembed" href="https://www.jotform.com/oembed/?format=xml&amp;url=https%3A%2F%2Fform.jotform.com%2F210682418757462" title="oEmbed Form"> -->
+    <meta property="og:title" content="College Admission Form">
+    <meta property="og:description" content="Please click the link to complete this form.">
+    <meta name="slack-app-id" content="AHNMASS8M">
+
+    <link rel="stylesheet" href="{% static 'form.css' %}">
+    <link rel="stylesheet" href="{% static 'calendarview.css '%}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>GDM Education | Adimission Form :: GDM Education</title>
+
+    <link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.23797" />
+    <link type="text/css" rel="stylesheet"
+      href="https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5f7ed99c2c2c7240ba580251" />
+    <link type="text/css" rel="stylesheet"
+      href="https://cdn.jotfor.ms/css/styles/payment/payment_styles.css?3.3.23797" />
+    <link type="text/css" rel="stylesheet"
+      href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.23797" />
+    <script src="https://cdn.jotfor.ms/js/vendor/jquery-1.8.0.min.js?v=3.3.23797" type="text/javascript"></script>
+    <script src="https://cdn.jotfor.ms/js/vendor/maskedinput.min.js?v=3.3.23797" type="text/javascript"></script>
+    <script src="https://cdn.jotfor.ms/js/vendor/jquery.maskedinput.min.js?v=3.3.23797" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.min.js"></script>
+    <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+    <script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.23797" type="text/javascript"></script>
+    <script type="text/javascript">
+      JotForm.init(function () {
+        JotForm.setPhoneMaskingValidator('input_41_full', '(###) ###-####');
+        setTimeout(function () {
+          $('input_55').hint('ex: myname@example.com');
+        }, 20);
+        JotForm.description('input_50', 'Payment is due 3 days prior to the start of the class');
+        JotForm.newDefaultTheme = true;
+        JotForm.extendsNewTheme = false;
+        JotForm.newPaymentUIForNewCreatedForms = false;
+        JotForm.newPaymentUI = true;
+        JotForm.alterTexts({ "confirmClearForm": "Are you sure you want to clear the form", "lessThan": "Your score should be less than" });
+        /*INIT-END*/
+      });
+
+      JotForm.prepareCalculationsOnTheFly([null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, { "name": "gender", "qid": "15", "text": "Gender", "type": "control_radio" }, null, null, { "name": "areYou18", "qid": "18", "text": "Are you Hispanic or Latino?", "type": "control_radio" }, null, null, null, null, null, null, null, null, { "name": "ofWhich", "qid": "27", "text": "Of which country are you a citizen?", "type": "control_dropdown" }, null, null, null, null, null, null, null, null, null, null, null, { "name": "birthDate39", "qid": "39", "text": "Birth Date", "type": "control_birthdate" }, { "name": "race", "qid": "40", "text": "Race:", "type": "control_checkbox" }, { "name": "phone", "qid": "41", "text": "Phone", "type": "control_phone" }, { "name": "address42", "qid": "42", "text": "Mailing Address", "type": "control_address" }, { "name": "clickTo", "qid": "43", "text": "Admissions Form", "type": "control_head" }, null, null, { "name": "pageBreak", "qid": "46", "text": "Page Break", "type": "control_pagebreak" }, null, null, { "name": "clickTo49", "qid": "49", "text": "Application Fee", "type": "control_head" }, { "description": "Payment is due 3 days prior to the start of the class", "name": "paymentMethod", "qid": "50", "text": "Payment Method:", "type": "control_checkbox" }, null, { "name": "submitForm", "qid": "52", "text": "Submit Form", "type": "control_button" }, null, null, { "name": "emailAddress", "qid": "55", "subLabel": "example@example.com", "text": "E-mail Address", "type": "control_email" }, { "name": "name", "qid": "56", "text": "Name", "type": "control_fullname" }]);
+      setTimeout(function () {
+        JotForm.paymentExtrasOnTheFly([null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, { "name": "gender", "qid": "15", "text": "Gender", "type": "control_radio" }, null, null, { "name": "areYou18", "qid": "18", "text": "Are you Hispanic or Latino?", "type": "control_radio" }, null, null, null, null, null, null, null, null, { "name": "ofWhich", "qid": "27", "text": "Of which country are you a citizen?", "type": "control_dropdown" }, null, null, null, null, null, null, null, null, null, null, null, { "name": "birthDate39", "qid": "39", "text": "Birth Date", "type": "control_birthdate" }, { "name": "race", "qid": "40", "text": "Race:", "type": "control_checkbox" }, { "name": "phone", "qid": "41", "text": "Phone", "type": "control_phone" }, { "name": "address42", "qid": "42", "text": "Mailing Address", "type": "control_address" }, { "name": "clickTo", "qid": "43", "text": "Admissions Form", "type": "control_head" }, null, null, { "name": "pageBreak", "qid": "46", "text": "Page Break", "type": "control_pagebreak" }, null, null, { "name": "clickTo49", "qid": "49", "text": "Application Fee", "type": "control_head" }, { "description": "Payment is due 3 days prior to the start of the class", "name": "paymentMethod", "qid": "50", "text": "Payment Method:", "type": "control_checkbox" }, null, { "name": "submitForm", "qid": "52", "text": "Submit Form", "type": "control_button" }, null, null, { "name": "emailAddress", "qid": "55", "subLabel": "example@example.com", "text": "E-mail Address", "type": "control_email" }, { "name": "name", "qid": "56", "text": "Name", "type": "control_fullname" }]);
+      }, 20);
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords"
+      content="Edulearn Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script>
+      addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+      }, false);
+
+      function hideURLbar() {
+        window.scrollTo(0, 1);
+      }
+    </script>
+    <!--// Meta tag Keywords -->
+
+    <!-- Custom-Files -->
+    <!-- Bootstrap-Core-Css -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <!-- Style-Css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}" type="text/css" media="all" />
+    <!-- Font-Awesome-Icons-Css -->
+    <link rel="stylesheet" href="{% static 'css/fontawesome-all.css' %}">
+    <!-- //Custom-Files -->
+
+    <!-- Web-Fonts -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+      rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+      rel="stylesheet">
+    <!-- //Web-Fonts -->
+
+  </head>
+
+
+  <body>
+
+    <script src="http://m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+    <script>
+      (function () {
+        if (typeof _bsa !== 'undefined' && _bsa) {
+          // format, zoneKey, segment:value, options
+          _bsa.init('fancybar', 'CKYDL2JN', 'placement:demo');
+        }
+      })();
+    </script>
+    <script>
+      (function () {
+        if (typeof _bsa !== 'undefined' && _bsa) {
+          // format, zoneKey, segment:value, options
+          _bsa.init('stickybox', 'CKYI653J', 'placement:w3layoutscom');
+        }
+      })();
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-149859901-1'></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-149859901-1');
+    </script>
+
+    <script>
+      window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+      ga('create', 'UA-149859901-1', 'demo.w3layouts.com');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://p.w3layouts.com/js/autotrack.js'></script>
+
+    <meta name="robots" content="noindex">
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      }
+
+      body {
+        background-image: url('/static/images/backgrd.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background: rgb(245, 232, 209); */
+      }
+
+      #w3lDemoBar.w3l-demo-bar {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+        padding: 40px 5px;
+        padding-top: 70px;
+        margin-bottom: 70px;
+        background: #0D1326;
+        border-top-left-radius: 9px;
+        border-bottom-left-radius: 9px;
+      }
+
+      #w3lDemoBar.w3l-demo-bar a {
+        display: block;
+        color: #e6ebff;
+        text-decoration: none;
+        line-height: 24px;
+        opacity: .6;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      #w3lDemoBar.w3l-demo-bar span.w3l-icon {
+        display: block;
+      }
+
+      #w3lDemoBar.w3l-demo-bar a:hover {
+        opacity: 1;
+      }
+
+      #w3lDemoBar.w3l-demo-bar .w3l-icon svg {
+        color: #e6ebff;
+      }
+
+      #w3lDemoBar.w3l-demo-bar .responsive-icons {
+        margin-top: 30px;
+        border-top: 1px solid #41414d;
+        padding-top: 40px;
+      }
+
+      #w3lDemoBar.w3l-demo-bar .demo-btns {
+        border-top: 1px solid #41414d;
+        padding-top: 30px;
+      }
+
+      #w3lDemoBar.w3l-demo-bar .responsive-icons a span.fa {
+        font-size: 26px;
+      }
+
+      #w3lDemoBar.w3l-demo-bar .no-margin-bottom {
+        margin-bottom: 0;
+      }
+
+      .toggle-right-sidebar span {
+        background: #0D1326;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #e6ebff;
+        border-radius: 50px;
+        font-size: 26px;
+        cursor: pointer;
+        opacity: .5;
+      }
+
+      .pull-right {
+        float: right;
+        position: fixed;
+        right: 0px;
+        top: 70px;
+        width: 90px;
+        z-index: 99999;
+        text-align: center;
+      }
+
+      /* ============================================================
+RIGHT SIDEBAR SECTION
+============================================================ */
+
+      #right-sidebar {
+        width: 90px;
+        position: fixed;
+        height: 100%;
+        z-index: 1000;
+        right: 0px;
+        top: 0;
+        margin-top: 60px;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        overflow-y: auto;
+      }
+
+
+      /* ============================================================
+RIGHT SIDEBAR TOGGLE SECTION
+============================================================ */
+
+      .hide-right-bar-notifications {
+        margin-right: -300px !important;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+      }
+
+
+
+      @media (max-width: 992px) {
+        #w3lDemoBar.w3l-demo-bar a.desktop-mode {
+          display: none;
+
+        }
+      }
+
+      @media (max-width: 767px) {
+        #w3lDemoBar.w3l-demo-bar a.tablet-mode {
+          display: none;
+
+        }
+      }
+
+      @media (max-width: 568px) {
+        #w3lDemoBar.w3l-demo-bar a.mobile-mode {
+          display: none;
+        }
+
+        #w3lDemoBar.w3l-demo-bar .responsive-icons {
+          margin-top: 0px;
+          border-top: none;
+          padding-top: 0px;
+        }
+
+        #right-sidebar,
+        .pull-right {
+          width: 90px;
+        }
+
+        #w3lDemoBar.w3l-demo-bar .no-margin-bottom-mobile {
+          margin-bottom: 0;
+        }
+      }
+    </style>
+
+    <!-- header -->
+    <header>
+      <!-- top header -->
+      <div class="top-head-w3ls py-2 bg-dark">
+        <div class="container">
+          <div class="row">
+            <h1 class="text-capitalize text-white col-7">
+              <i class="fas fa-book text-dark bg-white p-2 rounded-circle mr-3"></i>welcome {{request.session.Email}} to
+              GDM Education
+            </h1>
+            <!-- social icons -->
+            <div class="social-icons text-right col-5">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://www.facebook.com/nishit.makvana.35"
+                    class="fab fa-facebook-f icon-border facebook rounded-circle"> </a>
+                </li>
+                <li>
+                  <a href="http://127.0.0.1:8000/gdm123@gmail.com"
+                    class="fab fa-google-plus-g icon-border googleplus rounded-circle"> </a>
+                </li>
+                <li class="ml-2">
+                  <a href="https://instagram.com/i_m._.nishit_0031?igshid=1ch9tjbrgk7tl"
+                    class="fa fa-instagram icon-border rss rounded-circle"> </a>
+                </li>
+              </ul>
+            </div>
+            <!-- //social icons -->
+          </div>
+        </div>
+      </div>
+      <!-- //top header -->
+      <!-- middle header -->
+      <div class="middle-w3ls-nav py-2">
+        <div class="container">
+          <div class="row">
+            <a class="logo font-italic font-weight-bold col-lg-4 text-lg-left text-center" href="/index2">GDM
+              Education</a>
+            <div class="col-lg-8 right-info-agiles mt-lg-0 mt-sm-3 mt-1">
+              <div class="row">
+                <div class="col-sm-4 nav-middle">
+                  <i class="far fa-envelope-open text-center mr-md-4 mr-sm-2 mr-4"></i>
+                  <div class="agile-addresmk">
+                    <p>
+                      <span class="font-weight-bold text-dark">Mail Us</span>
+                      <a href="mailto:patelkirti1720@gmail.com">gdm123@gmail.com</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-6 nav-middle mt-sm-0 mt-2">
+                  <i class="fas fa-phone-volume text-center mr-md-4 mr-sm-2 mr-4"></i>
+                  <div class="agile-addresmk">
+                    <p>
+                      <span class="font-weight-bold text-dark">Call Us</span>
+                      +91 78785 65574
+                    </p>
+                  </div>
+                </div>
+
+                {% if request.session.Email %}
+                <div class="col-sm-4 col-6 top-login-butt text-right mt-sm-2">
+                  <a href="/logout" class="button-head-mow3 text-white">Log-out</a>
+                </div>
+
+                {% else %}
+
+                <div class="col-sm-4 col-6 top-login-butt text-right mt-sm-2">
+                  <a href="/login" class="button-head-mow3 text-white">Login</a>
+                </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //middle header -->
+    </header>
+    <!-- //header -->
+
+		<!-- banner -->
+		<div class="banner-agile-2">
+			<!-- navigation -->
+			<div class="navigation-w3ls">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-nav">
+					<button class="navbar-toggler mx-auto" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+						<ul class="navbar-nav justify-content-center">
+							<li class="nav-item active">
+								<a class="nav-link text-white" href="/index2">Home
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" href="/about">About Us</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle text-white" href="#" role="button"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Courses
+								</a>
+								<div class="dropdown-menu">
+									{% for i in data %}
+									<a class="dropdown-item" href="/catgry/{{ i.title }}/">{{ i.title }}</a>
+									{% endfor %}
+
+									<div class="dropdown-divider"></div>
+									{% if request.session.Email %}
+									<a class="dropdown-item" href="/form">Apply Now</a>
+									{% endif %}
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle text-white" href="#" role="button"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Pages
+								</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="/about">Instructors</a>
+									<a class="dropdown-item" href="/index2">What We Do</a>
+
+									{% if request.session.Email %}
+
+									<a class="dropdown-item" href="/logout">Log-out</a>
+									<a class="dropdown-item" href="/applyform">Submitted Form</a>
+
+									{% else %}
+
+									<a class="dropdown-item" href="/login">Login</a>
+									<a class="dropdown-item" href="/register">Register</a>
+
+									{% endif %}
+
+									{% comment %} <a class="dropdown-item" href="/404">404 Page</a> {% endcomment %}
+									<a class="dropdown-item" href="/coming_soon">Coming Soon</a>
+									{% if request.session.Email %}
+
+									<a class="dropdown-item" href="/form">Admission Form</a>
+
+									{% endif %}
+									<a class="dropdown-item" href="/faq">Faq</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" href="/blog">Blog</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" href="/gallery">Gallery</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" href="/contact">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!-- //banner -->
+
+    <!-- breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index2">Home</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Admission Form</li>
+      </ol>
+    </nav>
+    <!-- breadcrumb -->
+    <!-- //banner -->
+    <form class="jotform-form" method="POST" enctype="multipart/form-data" action="/editapply/{{data.id}}/">
+      {% csrf_token %}
+      <input type="hidden" name="formID" />
+      <input type="hidden" id="JWTContainer" />
+      <input type="hidden" id="cardinalOrderNumber" />
+      <div role="main" class="form-all" style="background: lightgray; margin-top: 0px;">
+        <ul class="form-section page-section" style="height: 1400px;">
+          <li id="cid_43" class="form-input-wide" data-type="control_head">
+            <div class="form-header-group  header-large" style="margin-top: 0px;">
+              <div class="header-text httal htvam">
+                <h1 id="header_43" class="form-header" data-component="header">
+                  Admissions Form
+                </h1>
+                <div id="subHeader_43" class="form-subHeader">
+                  Enter your admission information below
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="form-line jf-required" data-type="control_fullname" id="id_56">
+            <label class="form-label form-label-top form-label-extended form-label-auto" id="label_56" for="first_56">
+              Name
+              <span class="form-required">
+                *
+              </span>
+            </label>
+            <div id="cid_56" class="form-input-wide jf-required" data-layout="full">
+              <div data-wrapper-react="true" class="extended">
+                <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+                  <input type="text" id="FstName" name="FstName" value="{{data.FstName}}"
+                    class="form-textbox validate[required]" size="10" data-component="first"
+                    aria-labelledby="label_56 sublabel_56_first" required="" />
+                  <label class="form-sub-label" for="first_56" id="sublabel_56_first" style="min-height:13px"
+                    aria-hidden="false"> First Name </label>
+                </span>
+                <span class="form-sub-label-container" style="vertical-align:top" data-input-type="middle">
+                  <input type="text" id="MidName" name="MidName" value="{{data.MidName}}" class="form-textbox" size="10"
+                    data-component="middle" aria-labelledby="label_56 sublabel_56_middle" required="" />
+                  <label class="form-sub-label" for="middle_56" id="sublabel_56_middle" style="min-height:13px"
+                    aria-hidden="false"> Middle Initial </label>
+                </span>
+                <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
+                  <input type="text" id="LstName" name="LstName" value="{{data.LstName}}"
+                    class="form-textbox validate[required]" size="15" data-component="last"
+                    aria-labelledby="label_56 sublabel_56_last" required="" />
+                  <label class="form-sub-label" for="last_56" id="sublabel_56_last" style="min-height:13px"
+                    aria-hidden="false"> Last Name </label>
+                </span>
+              </div>
+            </div>
+          </li>
+          <li class="form-line form-line-column form-col-1 jf-required" data-type="control_birthdate" id="id_39">
+            <label class="form-label form-label-top" id="label_39" for="input_39">
+              Birth Date
+              <span class="form-required">
+                *
+              </span>
+            </label>
+            <div id="cid_39" class="form-input-wide jf-required" data-layout="full">
+              <div data-wrapper-react="true">
+                <input class="form-control" placeholder="Birth Date" value="{{data.Dob}}" name="date" id="date"
+                  type="date" required="">
+              </div>
+            </div>
+          </li>
+          <li class="form-line jf-required" data-type="control_radio" id="id_15">
+            <label class="form-label form-label-top form-label-auto" id="label_15" for="input_15">
+              Gender
+              <span class="form-required">
+                *
+              </span>
+            </label>
+            <div id="cid_15" class="form-input-wide jf-required" data-layout="full">
+              <div class="form-single-column" role="group" aria-labelledby="label_15" data-component="radio">
+                <div class="form-check">
+                  <!-- Gender = {{data.Gender}} -->
+                  {% if data.Gender == "Male" %}
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="Gender" checked="checked" value="Male">Male
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="Gender" value="Female">Female
+                  </label>
+                  {% elif data.Gender == "Female" %}
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="Gender" value="Male">Male
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="Gender" checked="checked" value="Female">Female
+                  </label>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="form-line jf-required" data-type="control_dropdown" id="id_27">
+            <label class="form-label form-label-top" id="label_27" for="input_27">
+              Of which country are you a citizen?
+              <span class="form-required">
+                *
+              </span>
+            </label>
+            {% if data.Country == "India" %}
+            <div id="cid_27" class="form-input-wide jf-required" data-layout="half">
+              <select class="form-dropdown validate[required]" id="Country" name="Country" style="width:310px"
+                data-component="dropdown" required="" aria-labelledby="label_27">
+                <option id="Country" name="Country" value=""> Select Country </option>
+                <option id="Country" name="Country" selected value="India"> India </option>
+                <option id="Country" name="Country" value="Canada"> Canada </option>
+                <option id="Country" name="Country" value="USA"> USA </option>
+                <option id="Country" name="Country" value="China"> China </option>
+              </select>
+            </div>
+            {% elif data.Country == "Canada" %}
+            <div id="cid_27" class="form-input-wide jf-required" data-layout="half">
+              <select class="form-dropdown validate[required]" id="Country" name="Country" style="width:310px"
+                data-component="dropdown" required="" aria-labelledby="label_27">
+                <option id="Country" name="Country" value=""> Select Country </option>
+                <option id="Country" name="Country" value="India"> India </option>
+                <option id="Country" name="Country" selected value="Canada"> Canada </option>
+                <option id="Country" name="Country" value="USA"> USA </option>
+                <option id="Country" name="Country" value="China"> China </option>
+              </select>
+            </div>
+            {% elif data.Country == "USA" %}
+            <div id="cid_27" class="form-input-wide jf-required" data-layout="half">
+              <select class="form-dropdown validate[required]" id="Country" name="Country" style="width:310px"
+                data-component="dropdown" required="" aria-labelledby="label_27">
+                <option id="Country" name="Country" value=""> Select Country </option>
+                <option id="Country" name="Country" value="India"> India </option>
+                <option id="Country" name="Country" value="Canada"> Canada </option>
+                <option id="Country" name="Country" selected value="USA"> USA </option>
+                <option id="Country" name="Country" value="China"> China </option>
+              </select>
+            </div>
+            {% elif data.Country == "China" %}
+            <div id="cid_27" class="form-input-wide jf-required" data-layout="half">
+              <select class="form-dropdown validate[required]" id="Country" name="Country" style="width:310px"
+                data-component="dropdown" required="" aria-labelledby="label_27">
+                <option id="Country" name="Country" value=""> Select Country </option>
+                <option id="Country" name="Country" value="India"> India </option>
+                <option id="Country" name="Country" value="Canada"> Canada </option>
+                <option id="Country" name="Country" value="USA"> USA </option>
+                <option id="Country" name="Country" selected value="China"> China </option>
+              </select>
+            </div>
+            {% endif %}
+          </li>
+          <li class="form-line jf-required" data-type="control_phone" id="id_41">
+            <label class="form-label form-label-top form-label-auto" id="label_41" for="input_41_full">
+              Phone
+              <span class="form-required">
+                *
+              </span>
+            </label>
+            <div id="cid_41" class="form-input-wide jf-required" data-layout="half">
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="tel" id="Phone" name="Phone" value="{{data.Phone}}" data-type="mask-number"
+                  class="mask-phone-number form-textbox validate[required, Fill Mask]" style="width:310px"
+                  data-masked="true" placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_41"
+                  required="" />
+                <label class="form-sub-label is-empty" for="input_41_full" id="sublabel_41_masked"
+                  style="min-height:13px" aria-hidden="false"> </label>
+              </span>
+            </div>
+          </li>
+          <li class="form-line jf-required" data-type="control_email" id="id_55">
+            <label class="form-label form-label-top form-label-auto" id="label_55" for="input_55">
+              E-mail Address
+              <span class="form-required">
+                *
+              </span>
+            </label>
+            <div id="cid_55" class="form-input-wide jf-required" data-layout="half">
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <input type="email" id="Email" name="Email" value="{{data.Email}}"
+                  class="form-textbox validate[required, Email]" style="width:310px" size="310"
+                  value="{{ request.session.Email}}" data-component="email" aria-labelledby="label_55 sublabel_input_55"
+                  required="" />
+                <label class="form-sub-label" for="input_55" id="sublabel_input_55" style="min-height:13px"
+                  aria-hidden="false"> example@example.com </label>
+              </span>
+            </div>
+          </li>
+          <li class="form-line jf-required" data-type="control_address" id="id_42">
+            <label class="form-label form-label-top form-label-auto" id="label_42" for="input_42_addr_line1">
+              Mailing Address
+              <span class="form-required">
+                *
+              </span>
+            </label>
+            <div id="cid_42" class="form-input-wide jf-required" data-layout="full">
+              <div summary="" class="form-address-table jsTest-addressField">
+                <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+                  <span class="form-address-line form-address-street-line jsTest-address-lineField">
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                      <input type="text" id="Address" name="Address" value="{{data.Address}}"
+                        class="form-textbox validate[required] form-address-line" data-component="address_line_1"
+                        aria-labelledby="label_42 sublabel_42_addr_line1" required="" />
+                      <label class="form-sub-label" for="input_42_addr_line1" id="sublabel_42_addr_line1"
+                        style="min-height:13px" aria-hidden="false"> Street Address </label>
+                    </span>
+                  </span>
+                </div>
+                <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+                  <span class="form-address-line form-address-street-line jsTest-address-lineField">
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                      <input type="text" id="Line" name="Line" value="{{data.Line}}"
+                        class="form-textbox form-address-line" data-component="address_line_2"
+                        aria-labelledby="label_42 sublabel_42_addr_line2" />
+                      <label class="form-sub-label" for="input_42_addr_line2" id="sublabel_42_addr_line2"
+                        style="min-height:13px" aria-hidden="false"> Street Address Line 2 </label>
+                    </span>
+                  </span>
+                </div>
+                <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+                  <span class="form-address-line form-address-city-line jsTest-address-lineField ">
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                      <input type="text" id="City" name="City" value="{{data.City}}"
+                        class="form-textbox validate[required] form-address-city" data-component="city"
+                        aria-labelledby="label_42 sublabel_42_city" required="" />
+                      <label class="form-sub-label" for="input_42_city" id="sublabel_42_city" style="min-height:13px"
+                        aria-hidden="false"> City </label>
+                    </span>
+                  </span>
+                  <span class="form-address-line form-address-state-line jsTest-address-lineField ">
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                      <input type="text" id="State" name="State" value="{{data.State}}"
+                        class="form-textbox validate[required] form-address-state" data-component="state"
+                        aria-labelledby="label_42 sublabel_42_state" required="" />
+                      <label class="form-sub-label" for="input_42_state" id="sublabel_42_state" style="min-height:13px"
+                        aria-hidden="false"> State / Province </label>
+                    </span>
+                  </span>
+                </div>
+                <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+                  <span class="form-address-line form-address-zip-line jsTest-address-lineField ">
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                      <input type="text" id="Code" name="Code" value="{{data.Code}}"
+                        class="form-textbox validate[required] form-address-postal" data-component="zip"
+                        aria-labelledby="label_42 sublabel_42_postal" required="" />
+                      <label class="form-sub-label" for="input_42_postal" id="sublabel_42_postal"
+                        style="min-height:13px" aria-hidden="false"> Postal / Zip Code </label>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li id="cid_46" class="form-input-wide" data-type="control_pagebreak">
+            <div class="form-pagebreak" data-component="pagebreak">
+              <div class="form-pagebreak-back-container">
+                <button id="form-pagebreak-back_46" type="button" class="form-pagebreak-back  jf-form-buttons"
+                  data-component="pagebreak-back">
+                  Back
+                </button>
+              </div>
+              <div class="form-pagebreak-next-container">
+                <button id="form-pagebreak-next_46" type="button" class="form-pagebreak-next  jf-form-buttons"
+                  data-component="pagebreak-next">
+                  Next
+                </button>
+              </div>
+              <div style="clear:both" class="pageInfo form-sub-label" id="pageInfo_46">
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div role="main" class="form-all"></div>
+
+        <!-- #second form -->
+        <ul class="form-section page-section">
+          <li id="cid_43" class="form-input-wide" data-type="control_head">
+            <div class="form-header-group  header-large">
+              <div class="header-text httal htvam">
+                <h1 id="header_43" class="form-header" data-component="header">
+                  Admissions Form
+                </h1>
+                <div id="subHeader_43" class="form-subHeader">
+                  <option id="Course" name="Course" value=""> </option>
+                  Enter your admission information below
+                </div>
+              </div>
+            </div>
+          </li>
+
+          {% if data.Course == "Language"%}
+          <div id="cid_27" class="form-input-wide jf-required" data-layout="half">
+            <select class="form-dropdown validate[required]" id="Course" value="Course" name="Course"
+              style="width:310px" data-component="dropdown" required="" aria-labelledby="label_27">
+              <option id="Course" name="Course" value=""> Select Course </option>
+              <option id="Course" name="Course" selected value="Language"> Language </option>
+              <option id="Course" name="Course" value="Communication"> Communication </option>
+              <option id="Course" name="Course" value="Business"> Business </option>
+              <option id="Course" name="Course" value="Software"> Software </option>
+              <option id="Course" name="Course" value="Social Media"> Social Media </option>
+              <option id="Course" name="Course" value="Photography"> Photography </option>
+              <option id="Course" name="Course" value="Web Designing"> Web Designing </option>
+            </select>
+          </div>
+          {% elif data.Course == "Communication"%}
+          <div id="cid_27" class="form-input-wide jf-required" data-layout="half">
+            <select class="form-dropdown validate[required]" id="Course" value="Course" name="Course"
+              style="width:310px" data-component="dropdown" required="" aria-labelledby="label_27">
+              <option id="Course" name="Course" value=""> Select Course </option>
+              <option id="Course" name="Course" value="Language"> Language </option>
+              <option id="Course" name="Course" selected value="Communication"> Communication </option>
+              <option id="Course" name="Course" value="Business"> Business </option>
+              <option id="Course" name="Course" value="Software"> Software </option>
+              <option id="Course" name="Course" value="Social Media"> Social Media </option>
+              <option id="Course" name="Course" value="Photography"> Photography </option>
+              <option id="Course" name="Course" value="Web Designing"> Web Designing </option>
+            </select>
+          </div>
+          {% elif data.Course == "Business"%}
+          <div id="cid_27" class="form-input-wide jf-required" data-layout="half">
+            <select class="form-dropdown validate[required]" id="Course" value="Course" name="Course"
+              style="width:310px" data-component="dropdown" required="" aria-labelledby="label_27">
+              <option id="Course" name="Course" value=""> Select Course </option>
+              <option id="Course" name="Course" value="Language"> Language </option>
+              <option id="Course" name="Course" value="Communication"> Communication </option>
+              <option id="Course" name="Course" selected value="Business"> Business </option>
+              <option id="Course" name="Course" value="Software"> Software </option>
+              <option id="Course" name="Course" value="Social Media"> Social Media </option>
+              <option id="Course" name="Course" value="Photography"> Photography </option>
+              <option id="Course" name="Course" value="Web Designing"> Web Designing </option>
+            </select>
+          </div>
+          {% elif data.Course == "Software"%}
+          <div id="cid_27" class="form-input-wide jf-required" data-layout="half">
+            <select class="form-dropdown validate[required]" id="Course" value="Course" name="Course"
+              style="width:310px" data-component="dropdown" required="" aria-labelledby="label_27">
+              <option id="Course" name="Course" value=""> Select Course </option>
+              <option id="Course" name="Course" value="Language"> Language </option>
+              <option id="Course" name="Course" value="Communication"> Communication </option>
+              <option id="Course" name="Course" value="Business"> Business </option>
+              <option id="Course" name="Course" selected value="Software"> Software </option>
+              <option id="Course" name="Course" value="Social Media"> Social Media </option>
+              <option id="Course" name="Course" value="Photography"> Photography </option>
+              <option id="Course" name="Course" value="Web Designing"> Web Designing </option>
+            </select>
+          </div>
+          {% elif data.Course == "Social Media"%}
+          <div id="cid_27" class="form-input-wide jf-required" data-layout="half">
+            <select class="form-dropdown validate[required]" id="Course" value="Course" name="Course"
+              style="width:310px" data-component="dropdown" required="" aria-labelledby="label_27">
+              <option id="Course" name="Course" value=""> Select Course </option>
+              <option id="Course" name="Course" value="Language"> Language </option>
+              <option id="Course" name="Course" value="Communication"> Communication </option>
+              <option id="Course" name="Course" value="Business"> Business </option>
+              <option id="Course" name="Course" value="Software"> Software </option>
+              <option id="Course" name="Course" selected value="Social Media"> Social Media </option>
+              <option id="Course" name="Course" value="Photography"> Photography </option>
+              <option id="Course" name="Course" value="Web Designing"> Web Designing </option>
+            </select>
+          </div>
+          {% elif data.Course == "Photography"%}
+          <div id="cid_27" class="form-input-wide jf-required" data-layout="half">
+            <select class="form-dropdown validate[required]" id="Course" value="Course" name="Course"
+              style="width:310px" data-component="dropdown" required="" aria-labelledby="label_27">
+              <option id="Course" name="Course" value=""> Select Course </option>
+              <option id="Course" name="Course" value="Language"> Language </option>
+              <option id="Course" name="Course" value="Communication"> Communication </option>
+              <option id="Course" name="Course" value="Business"> Business </option>
+              <option id="Course" name="Course" value="Software"> Software </option>
+              <option id="Course" name="Course" value="Social Media"> Social Media </option>
+              <option id="Course" name="Course" selected value="Photography"> Photography </option>
+              <option id="Course" name="Course" value="Web Designing"> Web Designing </option>
+            </select>
+          </div>
+          {% elif data.Course == "Web Designing"%}
+          <div id="cid_27" class="form-input-wide jf-required" data-layout="half">
+            <select class="form-dropdown validate[required]" id="Course" value="Course" name="Course"
+              style="width:310px" data-component="dropdown" required="" aria-labelledby="label_27">
+              <option id="Course" name="Course" value=""> Select Course </option>
+              <option id="Course" name="Course" value="Language"> Language </option>
+              <option id="Course" name="Course" value="Communication"> Communication </option>
+              <option id="Course" name="Course" value="Business"> Business </option>
+              <option id="Course" name="Course" value="Software"> Software </option>
+              <option id="Course" name="Course" value="Social Media"> Social Media </option>
+              <option id="Course" name="Course" value="Photography"> Photography </option>
+              <option id="Course" name="Course" selected value="Web Designing"> Web Designing </option>
+            </select>
+          </div>
+          {% endif %}
+
+          <!-- 
+          <li class="form-line jf-required" data-type="control_fullname" id="id_56">
+            <label class="form-label form-label-top form-label-extended form-label-auto" id="label_56" for="first_56">
+              Adhar Card
+              <span class="form-required">
+                *
+              </span>
+            </label>
+            <div id="cid_56" class="form-input-wide jf-required" data-layout="full">
+              <div data-wrapper-react="true" class="extended">
+                <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+                  <img src="{{data.AdharCard.url}}" alt="" style="height: 100px; width: 100px;">
+                  <input type="file" id="AdharCard" name="AdharCard" class="form-textbox validate[required]"
+                    data-component="first" aria-labelledby="label_56 sublabel_56_first" required="" />
+                </span>
+              </div>
+            </div>
+          </li> -->
+
+          <li class="form-line form-line-column form-col-1 jf-required" data-type="control_birthdate" id="id_39">
+            <label class="form-label form-label-top" id="label_39" for="input_39">
+              Adhar Card
+              <span class="form-required">
+                *
+              </span>
+            </label>
+            <div id="cid_39" class="form-input-wide jf-required" data-layout="full">
+              <div data-wrapper-react="true">
+                <img src="{{data.AdharCard.url}}" alt="" style="height: 100px; width: 100px;">
+                <input class="form-control" placeholder="AdharCard Photo" name="AdharCard" id="AdharCard" type="file"
+                  required="">
+              </div>
+            </div>
+          </li>
+
+          <li class="form-line form-line-column form-col-1 jf-required" data-type="control_birthdate" id="id_39">
+            <label class="form-label form-label-top" id="label_39" for="input_39">
+              PassPort Photo
+              <span class="form-required">
+                *
+              </span>
+            </label>
+            <div id="cid_39" class="form-input-wide jf-required" data-layout="full">
+              <div data-wrapper-react="true">
+                <img src="{{data.Passport.url}}" alt="" style="height: 100px; width: 100px;">
+                <input class="form-control" placeholder="PassPort Photo" name="Passport" id="Passport" type="file"
+                  required="">
+              </div>
+            </div>
+          </li>
+
+          <li class="form-line form-line-column form-col-1 jf-required" data-type="control_birthdate" id="id_39">
+            <label class="form-label form-label-top" id="label_39" for="input_39">
+              10th Marksheet
+              <span class="form-required">
+                *
+              </span>
+            </label>
+            <div id="cid_39" class="form-input-wide jf-required" data-layout="full">
+              <div data-wrapper-react="true">
+                <img src="{{data.Fmarksheet.url}}" alt="" style="height: 100px; width: 100px;">
+                <input class="form-control" placeholder="10th MarkSheet" name="Fmarksheet" id="Fmarksheet" type="file"
+                  required="">
+              </div>
+            </div>
+          </li>
+
+          <li class="form-line form-line-column form-col-1 jf-required" data-type="control_birthdate" id="id_39">
+            <label class="form-label form-label-top" id="label_39" for="input_39">
+              12th Marksheet
+              <span class="form-required">
+                *
+              </span>
+            </label>
+            <div id="cid_39" class="form-input-wide jf-required" data-layout="full">
+              <div data-wrapper-react="true">
+                <img src="{{data.Smarksheet.url}}" alt="" style="height: 100px; width: 100px;">
+                <input class="form-control" placeholder="12th MarkSheet" name="Smarksheet" id="Smarksheet" type="file"
+                  required="">
+              </div>
+            </div>
+          </li>
+
+          <li class="form-line form-line-column form-col-1 jf-required" data-type="control_birthdate" id="id_39">
+            <label class="form-label form-label-top" id="label_39" for="input_39">
+              Signature
+              <span class="form-required">
+                *
+              </span>
+            </label>
+            <div id="cid_39" class="form-input-wide jf-required" data-layout="full">
+              <div data-wrapper-react="true">
+                <img src="{{data.Signature.url}}" alt="" style="height: 100px; width: 100px;">
+                <input class="form-control" placeholder="Signature Photo" name="Signature" id="Signature" type="file"
+                  required="">
+              </div>
+            </div>
+          </li>
+
+          <li id="cid_46" class="form-input-wide" data-type="control_pagebreak">
+            <div class="form-pagebreak" data-component="pagebreak">
+              <div class="form-pagebreak-back-container">
+                <button id="form-pagebreak-back_46" type="button" class="form-pagebreak-back  jf-form-buttons"
+                  data-component="pagebreak-back">
+                  Back
+                </button>
+              </div>
+              <div class="form-pagebreak-next-container">
+                <button id="form-pagebreak-next_46" type="button" class="form-pagebreak-next  jf-form-buttons"
+                  data-component="pagebreak-next">
+                  Next
+                </button>
+              </div>
+              <div style="clear:both" class="pageInfo form-sub-label" id="pageInfo_46">
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="form-section page-section" style="display:none;">
+          <li id="cid_49" class="form-input-wide" data-type="control_head">
+            <div class="form-header-group  header-default">
+              <div class="header-text httal htvam">
+                <h2 id="header_49" class="form-header" data-component="header">
+                  Application Fee
+                </h2>
+                <div id="subHeader_49" class="form-subHeader">
+                  Payment is due 3 days prior to the start of the class
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="form-line jf-required" data-type="control_checkbox" id="id_50">
+            <label class="form-label form-label-top" id="label_50" for="input_50">
+              Payment Method:
+              <span class="form-required">
+                *
+              </span>
+            </label>
+            <div id="cid_50" class="form-input-wide jf-required" data-layout="full">
+              <div class="form-multiple-column" data-columncount="3" role="group" aria-labelledby="label_50"
+                data-component="checkbox">
+                {% if data.Payment == "Cradit" %}
+                <span class="form-checkbox-item">
+                  <span class="dragger-item">
+                  </span>
+                  <label id="label_input_50_0" for="input_50_0">
+                    <input type="radio" id="Payment" name="Payment" checked="checked" required="" value="Cradit" />
+                    Credit Card </label>
+                </span>
+
+                <span class="form-checkbox-item">
+                  <span class="dragger-item">
+                  </span>
+                  <label id="label_input_50_1" for="input_50_1">
+                    <input type="radio" id="Payment" name="Payment" required="" value="Mail" />Mail a Check </label>
+                </span>
+                <span class="form-checkbox-item">
+                  <span class="dragger-item">
+                  </span>
+                  <label id="label_input_50_2" for="input_50_2">
+                    <input type="radio" id="Payment" name="Payment" required="" value="Perschool" />In-person at school
+                  </label>
+                </span>
+
+                {% elif data.Payment == "Mail" %}
+
+                <span class="form-checkbox-item">
+                  <span class="dragger-item">
+                  </span>
+                  <label id="label_input_50_0" for="input_50_0">
+                    <input type="radio" id="Payment" name="Payment" checked="checked" required="" value="Cradit" />
+                    Credit Card </label>
+                </span>
+
+                <span class="form-checkbox-item">
+                  <span class="dragger-item">
+                  </span>
+                  <label id="label_input_50_1" for="input_50_1">
+                    <input type="radio" id="Payment" name="Payment" required="" value="Mail" />Mail a Check </label>
+                </span>
+                <span class="form-checkbox-item">
+                  <span class="dragger-item">
+                  </span>
+                  <label id="label_input_50_2" for="input_50_2">
+                    <input type="radio" id="Payment" name="Payment" required="" value="Perschool" />In-person at school
+                  </label>
+                </span>
+
+                {% elif data.Payment == "Perschool"%}
+                <span class="form-checkbox-item">
+                  <span class="dragger-item">
+                  </span>
+                  <label id="label_input_50_0" for="input_50_0">
+                    <input type="radio" id="Payment" name="Payment" checked="checked" required="" value="Cradit" />
+                    Credit Card </label>
+                </span>
+
+                <span class="form-checkbox-item">
+                  <span class="dragger-item">
+                  </span>
+                  <label id="label_input_50_1" for="input_50_1">
+                    <input type="radio" id="Payment" name="Payment" required="" value="Mail" />Mail a Check </label>
+                </span>
+                <span class="form-checkbox-item">
+                  <span class="dragger-item">
+                  </span>
+                  <label id="label_input_50_2" for="input_50_2">
+                    <input type="radio" id="Payment" name="Payment" required="" value="Perschool" />In-person at school
+                  </label>
+                </span>
+                {% endif %}
+              </div>
+            </div>
+          </li>
+          <li class="form-line" data-type="control_button" id="id_52">
+            <div id="cid_52" class="form-input-wide" data-layout="full">
+              <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+                <button id="input_52" type="submit"
+                  class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button"
+                  data-content="">
+                  Submit Form
+                </button>
+              </div>
+            </div>
+          </li>
+          <li style="display:none">
+            Should be Empty:
+            <input type="text" name="website" />
+          </li>
+        </ul>
+      </div>
+    </form>
+    <!-- brands -->
+    <div class="brands-w3ls py-md-5 py-4">
+      <div class="container py-xl-3">
+        <ul class="list-unstyled">
+          <li>
+            <i class="fab fa-supple"></i>
+          </li>
+          <li>
+            <i class="fab fa-angrycreative"></i>
+          </li>
+          <li>
+            <i class="fab fa-aviato"></i>
+          </li>
+          <li>
+            <i class="fab fa-aws"></i>
+          </li>
+          <li>
+            <i class="fab fa-cpanel"></i>
+          </li>
+          <li>
+            <i class="fab fa-hooli"></i>
+          </li>
+          <li>
+            <i class="fab fa-node"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- //brands -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container py-4">
+        <div class="row py-xl-5 py-sm-3">
+          <div class="col-lg-6 map">
+            <h2 class="contact-title text-capitalize text-white font-weight-light mb-sm-4 mb-3">our
+              <span class="font-weight-bold">directions</span>
+            </h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.056900811762!2d72.5569124!3d23.0216829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f68d560049%3A0x84fd6f2a7cdedca!2sWayToWeb%20Pvt%20Ltd.!5e0!3m2!1sen!2sin!4v1614595534022!5m2!1sen!2sin"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="conta-posi-w3ls p-4 rounded">
+              <h5 class="text-white font-weight-bold mb-3">Address</h5>
+              <p>Panchvati cross Rd,
+                <span>Way To Web Pvt. Ltd.,</span> Ahmedabad, INDIA
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 contact-agileits-w3layouts mt-lg-0 mt-4">
+            <h4 class="contact-title text-capitalize text-white font-weight-light mb-sm-4 mb-3">get in
+              <span class="font-weight-bold">touch</span>
+            </h4>
+            <p class="conta-para-style border-left pl-4">If you have any questions about the services we provide simply
+              use the form below. We try and respond to all queries
+              and comments within 24 hours.</p>
+            <br>
+            <p class="para-agileits-w3layouts text-white">
+              <i class="fas fa-map-marker pr-3"></i>Panchvati cross Rd, Ahmedabad, INDIA
+            </p>
+            <p class="para-agileits-w3layouts text-white my-sm-3 my-2">
+              <i class="fas fa-phone pr-3"></i>+91 78785 65574
+            </p>
+            <p class="para-agileits-w3layouts">
+              <i class="far fa-envelope-open pr-2"></i>
+              <a href="mailto:mail@example.com" class=" text-white">gdm@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-agiles py-3">
+        <div class="container">
+          <div class="row">
+            <p class="col-lg-8 copy-right-grids text-white text-lg-left text-center mt-lg-1">© 2021 GDM Education. All
+              Rights Reserved | Design by
+              <a href="https://GDMEducation.com/" target="_blank">GDM Education</a>
+            </p>
+            <!-- social icons -->
+            <div class="social-icons text-lg-right text-center col-lg-4 mt-lg-0 mt-3">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://www.facebook.com/nishit.makvana.35"
+                    class="fab fa-facebook-f icon-border facebook rounded-circle"> </a>
+                </li>
+                <li>
+                  <a href="http://127.0.0.1:8000/gdm123@gmail.com"
+                    class="fab fa-google-plus-g icon-border googleplus rounded-circle"> </a>
+                </li>
+                <li class="ml-2">
+                  <a href="https://instagram.com/i_m._.nishit_0031?igshid=1ch9tjbrgk7tl"
+                    class="fa fa-instagram icon-border rss rounded-circle"> </a>
+                </li>
+              </ul>
+            </div>
+            <!-- //social icons -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- //footer -->
+  </body>
+
+  </html>
+  <script type="text/javascript">JotForm.ownerView = true;</script>
+  <script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.23797"></script>
+  <script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.23797"></script>

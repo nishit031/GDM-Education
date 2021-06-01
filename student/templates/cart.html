@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Show Cart</title>
+</head>
+
+<body>
+    <table border="1px">
+        <th style="color: darkred;font-size: 15px;text-align: center;padding: 15px;"> Order </th>
+        <th style="color: darkred;font-size: 15px;text-align: center;padding: 15px;"> Product Name</th>
+        <th style="color: darkred;font-size: 15px;text-align: center;padding: 15px;"> Product Quantities </th>
+        <th style="color: darkred;font-size: 15px;text-align: center;padding: 15px;"> Price </th>
+
+        <tbody>
+            {% for i in data %}
+            <tr>
+                <td>{{ i.Email }}</td>
+                <td>{{ i.Books }}</td>
+                <td>{{ i.Quantity }}</td>
+                <td>{{ i.Price }}</td>
+
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>

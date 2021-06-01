@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+</head>
+
+<body>
+    {% if request.session.Email %}
+    <form method="POST">
+        {% csrf_token %}
+        <label>Order : {{ m }}</label><br><br>
+        <label>Product Name : {{ pro.Book_lang }}</label><br><br>
+        <label>Quentity :</label>
+        <input type="number" name="quentity" id="quentity"><br><br>
+        <label>Price : {{ pro.Book_price }}</label><br><br>
+        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+        <input type="submit" class="btn btn-success" value="Submit">
+    </form>
+    {% else %}
+    <h3>Pls Login First</h3>
+    {% endif %}
+</body>
+
+</html>

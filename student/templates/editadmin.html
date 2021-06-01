@@ -1,0 +1,77 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+
+                    <form method="post" class="form-horizontal" action="/editadmin/{{data.id}}/" center>
+                        {%csrf_token%}
+
+                        <div class="form-group">
+                            <label for="name" class="cols-sm-2 control-label">First Name</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user fa"
+                                            aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" id="Name" name="Name" value={{data.Name}}
+                                        placeholder="Enter your Name" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="cols-sm-2 control-label">Email</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope fa"
+                                            aria-hidden="true"></i></span>
+                                    <input type="email" id="Email" name="Email" value={{data.Email}}
+                                        class="form-control" placeholder="email.... *" />
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="password" class="cols-sm-2 control-label">password</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope fa"
+                                            aria-hidden="true"></i></span>
+                                    <input type="password" id="Password" name="Password" value="{{data.Password}}"
+                                        class="form-control" placeholder="Password *" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="cols-sm-2 control-label">Conform password</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope fa"
+                                            aria-hidden="true"></i></span>
+                                    <input type="password" id="CPassword" name="CPassword" value="{{data.CPassword}}"
+                                        class="form-control" placeholder="Conform Password *" />
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="form-group ">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block login-button">submit</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

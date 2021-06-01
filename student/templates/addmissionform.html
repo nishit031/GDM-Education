@@ -1,0 +1,85 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Addmission Form</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/addmission.css' %}">
+</head>
+
+<body>
+	<section>
+		<header>Addmission Form</header>
+		<div class="first">
+			<div class="heading">Basic Details</div>
+
+			{% for i in data %}
+			<div class="passport">
+				<img src="{{i.Passport.url}}" style="height: 120px; width: 90px;" alt="">
+			</div>
+
+			<div class="lbl">First Name :</div>
+			<div class="Namedet">{{i.FstName}}</div>
+
+			<div class="lbl">Mid Name :</div>
+			<div class="Namedet">{{i.MidName}}</div>
+
+			<div class="lbl">Last Name :</div>
+			<div class="Namedet">{{i.LstName}}</div>
+
+			<div class="lbl">DOB :</div>
+			<div class="dob">{{i.Dob}}</div>
+
+			<div class="lbl">Gender :</div>
+			<div class="gender">{{i.Gender}}</div>
+
+			<div class="lbl">Country :</div>
+			<div class="cntry">{{i.Country}}</div>
+
+			<div class="lbl">Course :</div>
+			<div class="crc">{{i.Course}}</div>
+		</div>
+
+		<div class="heading">Contact Details</div>
+
+		<div class="first">
+
+			<div class="lbl">Mobile No :</div>
+			<div class="crc">{{i.Phone}}</div>
+
+			<div class="lbl">Email ID :</div>
+			<div class="mail">{{i.Email}}</div>
+
+			<div class="lbl">Address :</div>
+			<div class="addr">{{i.Address}}</div>
+
+
+			<div class="lbl">City :</div>
+			<div class="crc">{{i.City}}</div>
+
+			<div class="lbl">State :</div>
+			<div class="stt">{{i.State}}</div>
+
+			<div class="lbl">Postal Code :</div>
+			<div class="crc">{{i.Code}}</div>
+
+			{% endfor %}
+
+			<div class="button">
+				<div class="cncl">
+					<button class="cnc"
+						style="width: 100px; height: 25px; border-radius: 8px; box-shadow: 0 9px #999">Cacnle</button>
+				</div>
+				<div class="print">
+					<button class="prt"
+						style="width: 100px; height: 25px; border-radius: 8px; box-shadow: 0 9px #999">Print</button>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+</body>
+
+</html>
